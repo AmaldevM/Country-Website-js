@@ -1,0 +1,33 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0 auto;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.countries{
+    max-width: 1240px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.country-div{
+    background: #c5e7f5;
+    border: 1px solid burlywood;
+    padding: 15px;
+}
+img{
+    width: 100%;
+    height: 150px;
+}
+@media screen and (max-width: 576px){
+    .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
